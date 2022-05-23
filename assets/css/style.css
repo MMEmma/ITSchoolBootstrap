@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --main-accent-color: #405a71;
+  --section-title-color-dark: #1b2731;
+  --body-color: #daa420;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+  line-height: 4rem;
+  font-weight: 800;
+}
+
+.p-top {
+  padding-top: 4rem;
+}
+.p-bottom {
+  padding-bottom: 6rem;
+}
+
+.btn-white {
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  color: #fff;
+  font-weight: 600;
+  text-transform: lowercase;
+  font-size: 1rem;
+  padding: 0 2rem 0 2rem;
+}
+
+.btn-white:hover {
+  background-color: #fff;
+  color: var(--main-accent-color);
+  border: 2px solid #fff;
+}
+
+.arrow {
+  margin: auto;
+  width: 0%;
+}
+
+.arrow i {
+  border: solid var(--main-accent-color);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down-arrow {
+  transform: rotate(45deg);
+}
+
+.section-title {
+  position: relative;
+}
+
+h2.section-title-heading {
+  color: var(--section-title-color-dark);
+  padding: 2rem 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid var(--body-color);
+  width: 3%;
+  top: 80px;
+}
+
+.section-title:hover::after {
+  width: 8%;
+  transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+}
+
+.navbar {
+  padding-top: 1.2rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--body-color);
+}
+
+.navbar.active {
+  background: linear-gradient(
+    to left,
+    rgba(230, 230, 228, 1),
+    rgba(64, 90, 113, 0.2),
+    rgba(218, 164, 32, 0.5)
+  );
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#hero {
+  background: linear-gradient(
+    to left,
+    rgba(230, 230, 228, 1),
+    rgba(64, 90, 113, 0.2),
+    rgba(218, 164, 32, 0.5)
+  );
+
+  background-size: cover;
+  padding: 8rem 0 6rem 0;
+  position: relative;
+}
+
+.main-hero-content h1 {
+  color: var(--main-accent-color);
+  text-transform: uppercase;
+  letter-spacing: 0.11rem;
+}
+
+.main-hero-content p {
+  color: var(--main-accent-color);
+  margin: 2rem 0;
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+}
+
+.image-box img {
+  position: absolute;
+  z-index: 1;
+  width: 60%;
+}
+
+#about i,
+#feature i {
+  color: var(--main-accent-color);
+}
+
+#about h3,
+#feature h3 {
+  color: var(--section-title-color-dark);
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+#about p,
+#feature p {
+  color: var(--main-accent-color);
+  font-size: 1rem;
+  line-height: 1.7rem;
+  padding: 1rem;
+}
+
+#about {
+  position: relative;
+}
+
+#feature {
+  background-color: #fafafa;
+}
+
+#download {
+  background: linear-gradient(
+    to left,
+    rgba(218, 164, 32, 0.2),
+    rgba(64, 90, 113, 0.3),
+    rgba(82, 47, 89, 0.5)
+  );
+  background-size: cover;
+  padding-bottom: 6rem;
+  position: relative;
+}
+
+#download .download-title h2 {
+  padding-top: 4rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+#download .download-title p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  margin-top: 2.5rem;
+}
+
+#download .download-title .download-btns {
+  margin-top: 4rem;
+}
+
+#download .download-title .download-btns a {
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+}
+
+#download .download-title .download-btns a:hover {
+  background-color: #fff;
+  color: var(--main-accent-color);
+  border: 2px solid #fff;
+  text-decoration: none;
+}
+
+#pricing {
+  position: relative;
+}
+
+#pricing .table {
+  padding-top: 4rem;
+}
+
+#pricing .pricing-table {
+  background-color: #fff;
+  box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 1rem;
+  width: calc(90% / 3);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#pricing .table-header {
+  margin: 0;
+  width: 100%;
+}
+
+#pricing .pricing-table .table-header {
+  padding: 2rem 0 1rem 0;
+}
+
+#pricing .pricing-table .table-header h4 {
+  color: var(--section-title-color-dark);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#pricing .pricing-table .table-content {
+  margin-top: 1.5rem;
+}
+
+#pricing .pricing-table .table-content ul li {
+  list-style: none;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-weight: 400;
+}
+
+#pricing .pricing-table .table-footer {
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+#pricing .pricing-table:nth-child(2) .table-header {
+  background: linear-gradient(
+    to left,
+    rgba(230, 230, 228, 1),
+    rgba(64, 90, 113, 0.2),
+    rgba(218, 164, 32, 0.5)
+  );
+  padding: 2rem 0 1rem 0;
+  color: #fff;
+}
+
+#pricing .pricing-table:nth-child(2) .table-header h4 {
+  color: #fff;
+}
+
+hr {
+  width: 8.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact {
+  background-color: #f0f1f3;
+  position: relative;
+}
+
+.btn-contact {
+  background: var(--main-accent-color);
+  padding: 0.5rem 2.2rem;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 2rem;
+  border: 2px solid var(--main-accent-color);
+}
+
+.btn-contact:hover {
+  text-decoration: none;
+  background: #fff;
+  color: var(--main-accent-color);
+}
+
+#contact .contact-details ul li {
+  padding-bottom: 0.9rem;
+}
+
+#contact .contact-details ul li i {
+  color: var(--body-color);
+}
+
+#footer {
+  background-color: var(--section-title-color-dark);
+  padding-top: 6 rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+#footer .footer-logo img {
+  margin-top: 5rem;
+  color: #fff;
+}
+
+#footer .social-icons i {
+  margin: 0.9rem;
+  color: #fafafa;
+}
+
+.copyright {
+  color: #fafafa;
+  font-size: 0.8rem;
+}

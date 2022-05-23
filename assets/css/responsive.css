@@ -1,0 +1,61 @@
+@media (min-width: 1281px) {
+  .device img {
+    position: relative;
+    top: 3rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .device img {
+    position: relative;
+    top: 10rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background: rgba(64, 90, 113, 0.99);
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .image-box {
+    display: none;
+  }
+
+  .device img {
+    position: relative;
+    top: 20rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-hero-content h1 {
+    text-align: center;
+  }
+
+  .hero-buttons {
+    text-align: center;
+  }
+
+  .device img {
+    display: none;
+  }
+
+  #pricing .pricing-table {
+    width: calc(70% / 1);
+    margin-top: 2rem;
+  }
+
+  #pricing .pricing-table:nth-child(1) {
+    margin-top: -1rem;
+  }
+
+  #contact .adress {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+}
