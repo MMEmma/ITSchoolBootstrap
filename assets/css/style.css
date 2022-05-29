@@ -106,10 +106,6 @@ h1 {
   display: none;
 }
 
-.visible {
-  visibility: visible;
-}
-
 .section-title {
   position: relative;
 }

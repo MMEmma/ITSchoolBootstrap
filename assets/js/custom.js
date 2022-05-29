@@ -19,6 +19,7 @@ $(".arrow").click(function () {
 
 $(document).ready(function () {
   var scrollPos = 0;
+  $(".arrow").removeClass("hidden");
   $(document).scroll(function () {
     scrollPos = $(this).scrollTop();
     if (scrollPos <= 110) {
