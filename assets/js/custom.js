@@ -8,30 +8,23 @@ $(function () {
   });
 });
 
-var $header = jQuery(".arrow");
-var appScroll = appScrollForward;
-var appScrollPosition = 0;
-var scheduledAnimationFrame = false;
+$(".arrow").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $("section").next().offset().top,
+    },
+    1000
+  );
+});
 
-function appScrollForward() {
-  scheduledAnimationFrame = false;
-  if (appScrollPosition < 100) return;
-  $header.removeClass("arrow");
-  appScroll = appScrollReverse;
-}
-
-function appScrollReverse() {
-  scheduledAnimationFrame = false;
-  if (appScrollPosition > 100) return;
-  $header.addClass("arrow");
-  appScroll = appScrollForward;
-}
-
-function appScrollHandler() {
-  appScrollPosition = window.pageYOffset;
-  if (scheduledAnimationFrame) return;
-  scheduledAnimationFrame = true;
-  requestAnimationFrame(appScroll);
-}
-
-jQuery(window).scroll(appScrollHandler);
+$(document).ready(function () {
+  var scrollPos = 0;
+  $(document).scroll(function () {
+    scrollPos = $(this).scrollTop();
+    if (scrollPos <= 110) {
+      $(".arrow").removeClass("hidden");
+    } else {
+      $(".arrow").addClass("hidden");
+    }
+  });
+});

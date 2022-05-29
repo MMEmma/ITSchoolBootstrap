@@ -10,6 +10,9 @@
     position: relative;
     top: 10rem;
   }
+  .arrow {
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 992px) {
